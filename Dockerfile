@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine3.14
+FROM php:8.4-fpm-alpine3.20
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
@@ -66,7 +66,7 @@ RUN set -ex; \
         gmp-dev \
         bzip2-dev \
         gettext-dev \
-        libressl-dev \
+        openssl-dev \
         curl-dev \
         sqlite-dev \
         imagemagick-dev \
